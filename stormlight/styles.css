@@ -1,0 +1,49 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #282828; /* Dark background */
+    color: #e0d4c4; /* Light text color */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #b0a090; /* Slightly lighter color */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.image-box {
+    flex: 1;
+    margin-right: 20px; /* Space between boxes */
+}
+
+.text-box {
+    flex: 1;
+    background-color: #3c3c3c; /* Darker box */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-box p {
+    margin: 0;
+}
+
+.district {
+    margin-top: 20px;
+    background-color: #3c3c3c; /* Darker box for district descriptions */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.district h2 {
+    margin-top: 0;
+    color: #b0a090; /* Title color for districts */
+}

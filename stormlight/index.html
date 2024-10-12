@@ -3,64 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stormlight City</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Stormlight</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'Crimson Pro', serif; /* Darker, thematic font */
-            background-color: #2a2a2a; /* Dark grey background */
-            color: #e1e1e1; /* Light grey text for contrast */
-            text-align: center;
+            font-family: 'Georgia', serif;
+            background-color: #282828; /* Dark background */
+            color: #e0d4c4; /* Light text color */
             margin: 0;
             padding: 20px;
         }
 
         h1 {
-            font-size: 2.5rem;
-            color: #b58d1f; /* Earthy gold color */
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Soft shadow for depth */
+            text-align: center;
+            color: #b0a090; /* Slightly lighter color */
         }
 
-        img {
-            width: 90%; /* Resize image to be 90% of the container width */
-            max-width: 900px; /* Maximum width of the image */
-            height: auto; /* Keep aspect ratio */
-            border: 5px solid #b58d1f; /* Earthy gold border */
-            border-radius: 10px; /* Rounded corners */
-            margin-bottom: 20px; /* Space below the image */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Shadow effect for image */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .image-box {
+            flex: 1;
+            margin-right: 20px; /* Space between boxes */
+        }
+
+        .text-box {
+            flex: 1;
+            background-color: #3c3c3c; /* Darker box */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-box p {
+            margin: 0;
         }
 
         .district {
-            background-color: #3b3b3b; /* Dark grey background for district sections */
-            border: 1px solid #444; /* Darker border */
-            border-radius: 8px; /* Rounded corners for sections */
+            margin-top: 20px;
+            background-color: #3c3c3c; /* Darker box for district descriptions */
             padding: 15px;
-            margin: 20px auto;
-            max-width: 800px; /* Max width for district sections */
-            text-align: left; /* Left-align text */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect for district sections */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         }
 
         .district h2 {
-            color: #e4b74d; /* Lighter gold color for district headings */
-            font-size: 1.8rem; /* Slightly larger font for headings */
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Soft shadow for headings */
-        }
-
-        .district p {
-            font-size: 1rem; /* Regular font size for paragraphs */
-            line-height: 1.5; /* Improve line spacing */
-            margin: 5px 0; /* Space between paragraphs */
+            margin-top: 0;
+            color: #b0a090; /* Title color for districts */
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Stormlight City</h1>
-    <img src="images/stormlight-map.png" alt="Stormlight City Map">
+    <h1>Welcome to Stormlight</h1>
+    <div class="container">
+        <div class="image-box">
+            <img src="stormlight_map.png" alt="Map of Stormlight" style="width: 100%; max-width: 500px;">
+        </div>
+        <div class="text-box">
+            <h2>Welcome to Stormlight</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae nisi vel lacus euismod hendrerit. Vivamus euismod sapien eu libero fermentum, vitae pretium erat placerat. Aliquam erat volutpat. Donec aliquet tincidunt sem, nec finibus sem posuere a. Fusce et velit sed leo luctus pretium a at purus. Suspendisse potenti. Nullam vel enim non nunc consectetur malesuada.</p>
+        </div>
+    </div>
 
+    <!-- District Descriptions -->
     <div class="district">
         <h2>Downcrest Town (Central Commercial Hub)</h2>
         <p>The beating heart of Stormlight, Downcrest Town is a labyrinth of bustling markets, shouting merchants, and winding streets that pulse with life during the day. Ornate signs creak on weathered hinges above shops, their stone walls streaked with the grime of countless generations. Though traders sell everything from exotic spices to magical trinkets, the air here always feels thick with something else—an unspoken tension that clings to those who linger too long.</p>

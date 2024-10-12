@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stormlight City Map</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .description {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>City of Stormlight</h1>
+    <img src="images/stormlight-map.png" alt="City Map" usemap="#citymap" style="width:100%;">
+    <map name="citymap">
+        <area shape="rect" coords="34,44,270,350" alt="Downcrest Town" onmouseover="showDescription('downcrest')" onmouseout="hideDescription()">
+        <area shape="circle" coords="400,200,50" alt="Purple Bridge" onmouseover="showDescription('purple-bridge')" onmouseout="hideDescription()">
+        <!-- Add more areas for each district -->
+    </map>
+    <div id="description" class="description"></div>
+
+    <script>
+        const descriptions = {
+            'downcrest': 'The beating heart of Stormlight, Downcrest Town is a labyrinth of bustling markets...',
+            'purple-bridge': 'Named for the rare stone that was once used to construct its foundation...',
+            // Add descriptions for all areas
+        };
+
+        function showDescription(area) {
+            const descriptionDiv = document.getElementById('description');
+            descriptionDiv.textContent = descriptions[area];
+            descriptionDiv.style.display = 'block';
+        }
+
+        function hideDescription() {
+            const descriptionDiv = document.getElementById('description');
+            descriptionDiv.style.display = 'none';
+        }
+
+        document.addEventListener('mousemove', function (e) {
+            const descriptionDiv = document.getElementById('description');
+            descriptionDiv.style.top = e.pageY + 10 + 'px';
+            descriptionDiv.style.left = e.pageX + 10 + 'px';
+        });
+    </script>
+</body>
+</html>

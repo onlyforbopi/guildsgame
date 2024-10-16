@@ -42,6 +42,7 @@ nav a:hover {
 .guild-title {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .guild-title h1 {
@@ -106,4 +107,79 @@ footer p {
     margin: 0;
     font-size: 1rem;
     color: #e0d4c4; /* Light text color */
+}
+
+
+/* Two-column layout for perks and dynamics */
+.content-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Spacing between columns */
+}
+
+/* Adjusting perks and dynamics blocks */
+.perks, .guild-dynamics {
+    flex: 1; /* Each takes equal space */
+    padding: 20px;
+    margin: 0; /* Reset margins */
+    background-color: #3c3c3c; /* Dark background to match other elements */
+    border: 1px solid #b0a090; /* Border styling to match */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    min-height: 300px; /* Ensure both columns have a minimum height */
+    display: flex; /* Enable flexbox for inner content alignment */
+    flex-direction: column; /* Align items vertically */
+}
+
+.guild-dynamics {
+    /*flex: 1 auto; /* Allow it to grow and shrink as needed */
+    max-height: 450px; /* Example height, adjust as needed */
+    /*overflow: auto; /* Add scroll if content exceeds max height */
+}
+
+/* Guild dynamics section */
+.guild-dynamics h2, .perks h2 {
+    margin: 0; /* Reset margin to ensure no extra space */
+}
+
+.guild-dynamics ul, .perks ul {
+    margin-top: 10px; /* Add top margin to lists for spacing */
+}
+
+/* Ensure consistent margin for titles */
+.guild-title {
+    margin-bottom: 30px; /* Adjust to create uniform spacing below the title */
+}
+
+/* Guild Traits Section */
+.guild-traits {
+    width: 96%; /* Full width of the container */
+    background-color: #3c3c3c; /* Dark background to match other sections */
+    border: 1px solid #b0a090; /* Light border for consistency */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin-bottom: 20px; /* Space below the traits section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow */
+}
+
+/* Optional: Add styling for individual traits */
+.guild-traits .trait {
+    margin-bottom: 15px; /* Space between traits */
+}
+
+.guild-traits h2 {
+    font-size: 2rem; /* Consistent title size */
+    color: #b0a090; /* Title color matching the theme */
+    margin-bottom: 10px; /* Space below the section title */
+}
+
+.guild-traits h3 {
+    font-size: 1.5rem; /* Adjusted font size for trait headers */
+    color: #b0a090; /* Header color for traits */
+    margin-bottom: 5px; /* Space below trait header */
+}
+
+.guild-traits p {
+    font-size: 1.2rem; /* Font size for paragraph text */
+    color: #e0d4c4; /* Light text color for paragraphs */
 }

@@ -1,0 +1,109 @@
+body {
+    font-family: 'Georgia', serif; /* Matching font family */
+    background-color: #282828; /* Dark background like the first style */
+    color: #e0d4c4; /* Light text color */
+    margin: 0;
+    padding: 20px; /* Keeping padding from the first style */
+}
+
+/* Header Styling */
+header {
+    background-color: #3c3c3c; /* Darker header background */
+    color: #b0a090; /* Lighter text to match first style */
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #3c3c3c; /* Darker nav background */
+    padding: 10px;
+}
+
+nav a {
+    color: #e0d4c4; /* Light text color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.guild-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.guild-title h1 {
+    font-size: 3rem;
+    color: #b0a090; /* Matching title color from the first style */
+    margin-bottom: 10px;
+}
+
+.guild-title p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #e0d4c4; /* Light text color */
+}
+
+/* Guild Perks Section */
+.perks {
+    margin-top: 30px;
+}
+
+.perks h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #b0a090; /* Matching district title color */
+}
+
+.perk-level {
+    margin-bottom: 30px;
+    background-color: #3c3c3c; /* Darker box for each tier */
+    padding: 20px;
+    border: 1px solid #b0a090; /* Adding a light border to each box */
+    border-radius: 8px; /* Rounded corners to match the first style */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow */
+}
+
+.perk-level h3 {
+    font-size: 1.8rem;
+    color: #b0a090; /* Matching h2 title color */
+    margin-bottom: 10px;
+}
+
+.perk-level ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.perk-level ul li {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #e0d4c4; /* Light text color */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3c3c3c; /* Darker footer background */
+    color: #b0a090; /* Lighter text to match first style */
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #e0d4c4; /* Light text color */
+}

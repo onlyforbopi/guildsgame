@@ -57,6 +57,18 @@ nav a:hover {
     color: #e0d4c4; /* Light text color */
 }
 
+.guild-name {
+    color: #adac4e; /* Replace with your preferred color */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.system-name {
+    color: #adac4e; /* Replace with your preferred color */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* Guild Perks Section */
 .perks {
     margin-top: 30px;
@@ -71,26 +83,26 @@ nav a:hover {
 .perk-level {
     margin-bottom: 30px;
     background-color: #3c3c3c; /* Darker box for each tier */
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #b0a090; /* Adding a light border to each box */
     border-radius: 8px; /* Rounded corners to match the first style */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow */
 }
 
 .perk-level h3 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #b0a090; /* Matching h2 title color */
     margin-bottom: 10px;
 }
 
 .perk-level ul {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .perk-level ul li {
     margin-bottom: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #e0d4c4; /* Light text color */
 }
 

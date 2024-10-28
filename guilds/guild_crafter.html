@@ -3,117 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merchants' Guild</title>
+    <title>Thieves' Guild</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <style>
-        body {
-            font-family: 'Palatino Linotype', serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Header Styling */
-        header {
-            background-color: #0056b3;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 2rem;
-        }
-
-        /* Navigation Styling */
-        nav {
-            background-color: #333;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Content Section */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .guild-title {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .guild-title h1 {
-            font-size: 3rem;
-            color: #0056b3;
-            margin-bottom: 10px;
-        }
-
-        .guild-title p {
-            font-size: 1.5rem;
-            font-style: italic;
-        }
-
-        /* Guild Perks Section */
-        .perks {
-            margin-top: 30px;
-        }
-
-        .perks h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .perk-level {
-            margin-bottom: 30px;
-        }
-
-        .perk-level h3 {
-            font-size: 1.8rem;
-            color: #0056b3;
-            margin-bottom: 10px;
-        }
-
-        .perk-level ul {
-            list-style: none;
-            padding-left: 20px;
-        }
-
-        .perk-level ul li {
-            margin-bottom: 5px;
-            font-size: 1.2rem;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 1rem;
-        }
-
-    </style> -->
 </head>
 <body>
 
     <div class="top-image">
-        <img src="images/crafter-guild.webp" alt="Guild Banner" style="width: 100%; height: auto;"/>
+        <img src="images/crafter-guild.webp" alt="Guild Banner" style="width: 100%; max-height: 500px; object-fit: cover; height: auto;"/>
     </div>
 
     <!-- Header -->
@@ -121,7 +17,7 @@
         Artisan's Guild
     </header>
 
-    <!-- Navigation (Optional) -->
+    <!-- Navigation -->
     <nav>
         <a href="../index.html">Home</a>
         <a href="../stormlight/index.html">Stormlight</a>
@@ -132,69 +28,116 @@
     <!-- Main Content -->
     <div class="container">
         <div class="guild-title">
-            <h1>The Factory</h1>
+            <h1>The Forge</h1>
             <p>"Every locked door hides a secret. We are the key that opens them all."</p>
         </div>
 
-        <!-- Perks Section -->
-        <div class="perks">
-            <h2>Guild Perks</h2>
 
-            <!-- Perk Level 1 -->
-            <div class="perk-level">
-                <h3>Level 1 - Apprentice Craftsman</h3>
+    <!-- Guild Traits Section -->
+    <div class="guild-traits">
+        <h2>Guild Traits</h2>
+        <div class="trait">
+            <h3>Positive Trait: Masters of Craft</h3>
+            <p>Members take pride in their unparalleled craftsmanship, creating items of exceptional quality and durability. Their work is highly sought after, and they’re known for both creativity and reliability in their trades.</p>
+            <p><span class="system-name">Impact on Rolls:</span> Members gain advantage on Intelligence (History) or Wisdom (Insight) checks related to crafting materials, construction, or ancient artifacts, due to their extensive knowledge of traditional techniques.</p>
+            <p><span class="system-name">Opportunities:</span> Characters might be respected or admired by those who value quality craftsmanship, leading to requests for custom work or alliances with patrons seeking unique, high-quality goods.</p>
+        </div>
+        <div class="trait">
+            <h3>Negative Trait: Stubborn Traditionalists</h3>
+            <p>Many guild members cling to old ways and methods, making them resistant to change or new innovations. This can sometimes prevent them from adapting to new demands or styles in their crafts, leading to conflicts with younger artisans.</p>
+            <p><span class="system-name">Impact on Rolls:</span> Members may suffer disadvantage on Intelligence (Investigation) checks when working with unfamiliar or innovative materials, as their approach is rooted in tradition and habit.</p>
+            <p><span class="system-name">Characters may face friction with progressive-minded guilds or NPCs and be viewed as out-of-touch in certain social circles, especially among younger craftsmen.</p>
+        </div>
+    </div>
+
+
+        <!-- Two-column layout: Perks and Guild Dynamics -->
+        <div class="content-columns">
+            <!-- Perks Section -->
+            <div class="perks">
+                <h2>Guild Perks</h2>
+
+                <!-- Perk Level 1 -->
+                <div class="perk-level">
+                    <h3>Level 1 - Apprentice Craftsman</h3>
+                    <br>
+                    <ul>
+                        <li>Gain access to basic crafting materials and tools at discounted rates from guild suppliers.</li>
+                        <li>The guild will provide training in basic crafting techniques and designs.</li>
+                        <li>Access to guild-certified workshops, allowing the creation of simple items with guild approval.</li>
+                    </ul>
+                </div>
+
+                <!-- Perk Level 2 -->
+                <div class="perk-level">
+                    <h3>Level 2 - Journeyman Assassin</h3>
+                    <br>
+                    <ul>
+                        <li>The guild will perform surveillance on a target for you, gathering information on their habits and weaknesses.</li>
+                        <li>Gain access to advanced poisons and traps not available to the general public.</li>
+                        <li>The guild will provide a decoy or patsy for your crimes, shifting blame onto someone else.</li>
+                    </ul>
+                </div>
+
+                <!-- Perk Level 3 -->
+                <div class="perk-level">
+                    <h3>Level 3 - Enforcer</h3>
+                    <br>
+                    <ul>
+                        <li>Ability to hire a skilled assassin for minor, low-profile jobs like non-lethal sabotage or intimidation.</li>
+                        <li>The guild will provide specialized equipment for covert missions, such as invisibility potions or smoke bombs.</li>
+                        <li>The Black Hand will eliminate a lesser rival or target for you, no questions asked.</li>
+                    </ul>
+                </div>
+
+                <!-- Perk Level 4 -->
+                <div class="perk-level">
+                    <h3>Level 4 - Master Assassin</h3>
+                    <br>
+                    <ul>
+                        <li>Request assassination of moderately important targets (nobles, guild leaders) without retaliation.</li>
+                        <li>Gain access to elite assassins for high-risk, high-reward missions, such as political coups or corporate sabotage.</li>
+                        <li>Complete immunity within the Black Hand’s territory, with protection from rival assassin guilds.</li>
+                    </ul>
+                </div>
+
+                <!-- Perk Level 5 -->
+                <div class="perk-level">
+                    <h3>Level 5 - Inner Circle</h3>
+                    <br>
+                    <ul>
+                        <li>The Black Hand will overthrow an entire rival organization on your command.</li>
+                        <li>Ability to influence city-wide political assassinations to reshape power dynamics in the city.</li>
+                        <li>Full control over the Black Hand’s resources, including hiring assassins to target high-profile figures like royalty or military leaders.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Guild Dynamics Section -->
+            <div class="guild-dynamics">
+                <h2>Guild Dynamics</h2>
+                <p><strong>Allies:</strong></p>
                 <ul>
-                    <li>Gain access to basic crafting materials and tools at discounted rates from guild suppliers.</li>
-                    <li>The guild will provide training in basic crafting techniques and designs.</li>
-                    <li>Access to guild-certified workshops, allowing the creation of simple items with guild approval.</li>
+                   <li><span class="guild-name">Merchants' Guild:</span> Merchants frequently hire assassins to take out competition or silence troublesome individuals. Assassins enjoy a steady stream of contracts, and merchants wield power through fear.</li>
+                   <li><span class="guild-name">Thieves' Guild:</span> The Assassins’ Guild often relies on the thieves for surveillance or to obtain intel before a kill. The two guilds respect each other's craft and sometimes work in tandem on complex, multi-layered operations.</li>
+                </ul>
+
+                <p><strong>Rivals:</strong></p>
+                <ul>
+                    <li><span class="guild-name">Healers' Guild:</span> Healers despise assassins for creating death and suffering, while assassins find healers meddlesome, especially if they revive targets or interfere with contracts. There may even be secret vendettas between them.</li>
+                    <li><span class="guild-name">Mages' Guild:</span> Assassins fear and respect mages for their power, but also see them as a threat. Mages who delve into necromancy or soul-binding could create lingering enemies among the Assassins' Guild by enslaving spirits or thwarting their "finality of death" code.</li>
                 </ul>
             </div>
 
-            <!-- Perk Level 2 -->
-            <div class="perk-level">
-                <h3>Level 2 - Journeyman</h3>
-                <ul>
-                    <li>Ability to commission minor magical items or specialized tools from other guild members.</li>
-                    <li>Gain exclusive access to rare crafting materials like special woods or enchanted metals.</li>
-                    <li>The guild will promote your work in local markets, increasing your reputation and client base.</li>
-                </ul>
-            </div>
 
-            <!-- Perk Level 3 -->
-            <div class="perk-level">
-                <h3>Level 3 - Master Craftsman</h3>
-                <ul>
-                    <li>Ability to request custom magical enhancements for weapons or armor.</li>
-                    <li>Access to a team of skilled artisans for large-scale projects, such as constructing a building or crafting complex artifacts.</li>
-                    <li>Priority use of guild-owned resources, such as exclusive workshops and crafting spaces.</li>
-                </ul>
-            </div>
 
-            <!-- Perk Level 4 -->
-            <div class="perk-level">
-                <h3>Level 4 - Guild Councillor</h3>
-                <ul>
-                    <li>The guild will provide sponsorship for high-profile commissions, such as work for nobles or the royal family.</li>
-                    <li>Ability to access legendary crafting materials, such as dragonbone or mithral.</li>
-                    <li>The guild will assign apprentices to work under your command, increasing your productivity and output.</li>
-                </ul>
-            </div>
 
-            <!-- Perk Level 5 -->
-            <div class="perk-level">
-                <h3>Level 5 - Grandmaster Artisan</h3>
-                <ul>
-                    <li>Complete control over city-wide crafting regulations, dictating material supply and pricing.</li>
-                    <li>The ability to monopolize specific markets, ensuring your products are the only ones legally sold in certain areas.</li>
-                    <li>The guild will grant you access to their most secret techniques, allowing the creation of legendary or unique magical items.</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Merchants' Guild. All rights reserved.</p>
+        <p>&copy; 2024 Thieves' Guild. All rights reserved.</p>
     </footer>
 
 </body>

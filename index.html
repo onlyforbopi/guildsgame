@@ -38,17 +38,53 @@
             background-color: #b0a090;
             color: #282828;
         }
+        /* Main container for side-by-side layout */
+        .content-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between boxes */
+            flex-wrap: wrap; /* Allows containers to stack on small screens */
+        }
+        /* Style for both link containers */
+        .box-container {
+            border: 2px solid #b0a090; /* Matches the button border */
+            background-color: #3c3c3c; /* Thematic background */
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column; /* Arrange links vertically */
+            align-items: center; /* Center the links */
+            width: 300px; /* Fixed width */
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Project Hub</h1>
+    <h1>The Setting so far...</h1>
     <p>Select a project to explore:</p>
     
-    <!-- Links to your indi2viduala project pages -->
-    <a href="stormlight/index.html">Stormlight</a>
-    <a href="ghostrock/index.html">Ghostrock</a>
-    <a href="guilds/index.html">Guilds</a>
-
-    <!-- Add more links as needed for your other projects -->
+    <!-- Content container for side-by-side layout -->
+    <div class="content-container">
+        <!-- Project links container -->
+        <div class="box-container">
+            <a href="stormlight/index.html">Stormlight</a>
+            <a href="ghostrock/index.html">Ghostrock</a>
+        </div>
+        <!-- Project links container -->
+        <div class="box-container">
+            <a href="guilds/index.html">Guilds</a>
+            <a href="guilds/index.html">Servants</a>
+            <a href="guilds/index.html">Domain</a>
+        </div>
+        
+        <!-- Cheatsheets container -->
+        <div class="box-container">
+            <a href="assets/myfile.pdf" target="_blank">Combat Reference</a>
+            <a href="assets/spelllist.pdf" target="_blank">Spell List</a>
+            <a href="assets/crafting.pdf" target="_blank">Crafting Guide</a>
+            <a href="assets/action.pdf" target="_blank">Action Reference</a>
+            <a href="assets/myfile.pdf" target="_blank">Bestiary</a>
+            <a href="assets/check.pdf" target="_blank">Check Reference</a>
+        </div>
+    </div>
 </body>
 </html>

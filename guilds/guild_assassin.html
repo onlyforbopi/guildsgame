@@ -3,117 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merchants' Guild</title>
+    <title>Thieves' Guild</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <style>
-        body {
-            font-family: 'Palatino Linotype', serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Header Styling */
-        header {
-            background-color: #0056b3;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 2rem;
-        }
-
-        /* Navigation Styling */
-        nav {
-            background-color: #333;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Content Section */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .guild-title {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .guild-title h1 {
-            font-size: 3rem;
-            color: #0056b3;
-            margin-bottom: 10px;
-        }
-
-        .guild-title p {
-            font-size: 1.5rem;
-            font-style: italic;
-        }
-
-        /* Guild Perks Section */
-        .perks {
-            margin-top: 30px;
-        }
-
-        .perks h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .perk-level {
-            margin-bottom: 30px;
-        }
-
-        .perk-level h3 {
-            font-size: 1.8rem;
-            color: #0056b3;
-            margin-bottom: 10px;
-        }
-
-        .perk-level ul {
-            list-style: none;
-            padding-left: 20px;
-        }
-
-        .perk-level ul li {
-            margin-bottom: 5px;
-            font-size: 1.2rem;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 1rem;
-        }
-
-    </style> -->
 </head>
 <body>
 
     <div class="top-image">
-        <img src="images/assassin-guild.jpg" alt="Guild Banner" style="width: 100%; height: auto;"/>
+        <img src="images/assassin-guild.jpg" alt="Guild Banner" style="width: 100%; max-height: 500px; object-fit: cover; height: auto;"/>
     </div>
 
     <!-- Header -->
@@ -121,7 +17,7 @@
         Assassin's Guild
     </header>
 
-    <!-- Navigation (Optional) -->
+    <!-- Navigation -->
     <nav>
         <a href="../index.html">Home</a>
         <a href="../stormlight/index.html">Stormlight</a>
@@ -136,65 +32,112 @@
             <p>"Every locked door hides a secret. We are the key that opens them all."</p>
         </div>
 
-        <!-- Perks Section -->
-        <div class="perks">
-            <h2>Guild Perks</h2>
 
-            <!-- Perk Level 1 -->
-            <div class="perk-level">
-                <h3>Level 1 - Initiate</h3>
+    <!-- Guild Traits Section -->
+    <div class="guild-traits">
+        <h2>Guild Traits</h2>
+        <div class="trait">
+            <h3>Positive Trait: Precision and Discretion</h3>
+            <p>Members are consummate professionals known for their precision, discretion, and careful adherence to codes of conduct.</p>
+            <p><span class="system-name">Impact on Rolls:</span> Members can gain advantage on Dexterity (Stealth) checks when attempting to remain undetected, or Wisdom (Insight) checks to assess a target’s vulnerabilities.</p>
+            <p><span class="system-name">Opportunities:</span> Characters might earn respect from other guilds and NPCs who appreciate their discretion, creating opportunities for alliances and trusted contracts with those who value careful, reliable work.</p>
+        </div>
+        <div class="trait">
+            <h3>Negative Trait: Ruthless Efficiency</h3>
+            <p>The guild’s commitment to carrying out contracts without question leads to a reputation for coldness and detachment from broader society.</p>
+            <p><span class="system-name">Impact on Rolls:</span> Members may suffer disadvantage on Charisma (Deception) or Charisma (Persuasion) checks when trying to show empathy or compassion, as they are perceived as emotionless or ruthless.</p>
+            <p><span class="system-name">Roleplay Opportunities:</span> Characters might face social rejection or suspicion from those who view them as too ruthless, potentially leading to tension with empathetic allies or support networks.</p>
+        </div>
+    </div>
+
+
+        <!-- Two-column layout: Perks and Guild Dynamics -->
+        <div class="content-columns">
+            <!-- Perks Section -->
+            <div class="perks">
+                <h2>Guild Perks</h2>
+
+                <!-- Perk Level 1 -->
+                <div class="perk-level">
+                    <h3>Level 1 - Initiate</h3>
+                    <br>
+                    <ul>
+                        <li>Gain access to the guild’s black market for poisons, traps, and assassination tools.</li>
+                        <li>Ability to hire an unskilled lookout or scout to follow or keep an eye on a target.</li>
+                        <li>The guild will teach you basic techniques for silent movement and evasion.</li>
+                    </ul>
+                </div>
+
+                <!-- Perk Level 2 -->
+                <div class="perk-level">
+                    <h3>Level 2 - Journeyman Assassin</h3>
+                    <br>
+                    <ul>
+                        <li>The guild will perform surveillance on a target for you, gathering information on their habits and weaknesses.</li>
+                        <li>Gain access to advanced poisons and traps not available to the general public.</li>
+                        <li>The guild will provide a decoy or patsy for your crimes, shifting blame onto someone else.</li>
+                    </ul>
+                </div>
+
+                <!-- Perk Level 3 -->
+                <div class="perk-level">
+                    <h3>Level 3 - Enforcer</h3>
+                    <br>
+                    <ul>
+                        <li>Ability to hire a skilled assassin for minor, low-profile jobs like non-lethal sabotage or intimidation.</li>
+                        <li>The guild will provide specialized equipment for covert missions, such as invisibility potions or smoke bombs.</li>
+                        <li>The Black Hand will eliminate a lesser rival or target for you, no questions asked.</li>
+                    </ul>
+                </div>
+
+                <!-- Perk Level 4 -->
+                <div class="perk-level">
+                    <h3>Level 4 - Master Assassin</h3>
+                    <br>
+                    <ul>
+                        <li>Request assassination of moderately important targets (nobles, guild leaders) without retaliation.</li>
+                        <li>Gain access to elite assassins for high-risk, high-reward missions, such as political coups or corporate sabotage.</li>
+                        <li>Complete immunity within the Black Hand’s territory, with protection from rival assassin guilds.</li>
+                    </ul>
+                </div>
+
+                <!-- Perk Level 5 -->
+                <div class="perk-level">
+                    <h3>Level 5 - Inner Circle</h3>
+                    <br>
+                    <ul>
+                        <li>The Black Hand will overthrow an entire rival organization on your command.</li>
+                        <li>Ability to influence city-wide political assassinations to reshape power dynamics in the city.</li>
+                        <li>Full control over the Black Hand’s resources, including hiring assassins to target high-profile figures like royalty or military leaders.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Guild Dynamics Section -->
+            <div class="guild-dynamics">
+                <h2>Guild Dynamics</h2>
+                <p><strong>Allies:</strong></p>
                 <ul>
-                    <li>Gain access to the guild’s black market for poisons, traps, and assassination tools.</li>
-                    <li>Ability to hire an unskilled lookout or scout to follow or keep an eye on a target.</li>
-                    <li>The guild will teach you basic techniques for silent movement and evasion.</li>
+                   <li><span class="guild-name">Merchants' Guild:</span> Merchants frequently hire assassins to take out competition or silence troublesome individuals. Assassins enjoy a steady stream of contracts, and merchants wield power through fear.</li>
+                   <li><span class="guild-name">Thieves' Guild:</span> The Assassins’ Guild often relies on the thieves for surveillance or to obtain intel before a kill. The two guilds respect each other's craft and sometimes work in tandem on complex, multi-layered operations.</li>
+                </ul>
+
+                <p><strong>Rivals:</strong></p>
+                <ul>
+                    <li><span class="guild-name">Healers' Guild:</span> Healers despise assassins for creating death and suffering, while assassins find healers meddlesome, especially if they revive targets or interfere with contracts. There may even be secret vendettas between them.</li>
+                    <li><span class="guild-name">Mages' Guild:</span> Assassins fear and respect mages for their power, but also see them as a threat. Mages who delve into necromancy or soul-binding could create lingering enemies among the Assassins' Guild by enslaving spirits or thwarting their "finality of death" code.</li>
                 </ul>
             </div>
 
-            <!-- Perk Level 2 -->
-            <div class="perk-level">
-                <h3>Level 2 - Journeyman Assassin</h3>
-                <ul>
-                    <li>The guild will perform surveillance on a target for you, gathering information on their habits and weaknesses.</li>
-                    <li>Gain access to advanced poisons and traps not available to the general public.</li>
-                    <li>The guild will provide a decoy or patsy for your crimes, shifting blame onto someone else.</li>
-                </ul>
-            </div>
 
-            <!-- Perk Level 3 -->
-            <div class="perk-level">
-                <h3>Level 3 - Master Assassin</h3>
-                <ul>
-                    <li>Ability to hire a skilled assassin for minor, low-profile jobs like non-lethal sabotage or intimidation.</li>
-                    <li>The guild will provide specialized equipment for covert missions, such as invisibility potions or smoke bombs.</li>
-                    <li>The Black Hand will eliminate a lesser rival or target for you, no questions asked.</li>
-                </ul>
-            </div>
 
-            <!-- Perk Level 4 -->
-            <div class="perk-level">
-                <h3>Level 4 - Silent Shadow</h3>
-                <ul>
-                    <li>Request assassination of moderately important targets (nobles, guild leaders) without retaliation.</li>
-                    <li>Gain access to elite assassins for high-risk, high-reward missions, such as political coups or corporate sabotage.</li>
-                    <li>Complete immunity within the Black Hand’s territory, with protection from rival assassin guilds.</li>
-                </ul>
-            </div>
 
-            <!-- Perk Level 5 -->
-            <div class="perk-level">
-                <h3>Level 5 - Guildmaster’s Inner Circle</h3>
-                <ul>
-                    <li>The Black Hand will overthrow an entire rival organization on your command.</li>
-                    <li>Ability to influence city-wide political assassinations to reshape power dynamics in the city.</li>
-                    <li>Full control over the Black Hand’s resources, including hiring assassins to target high-profile figures like royalty or military leaders.</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Merchants' Guild. All rights reserved.</p>
+        <p>&copy; 2024 Thieves' Guild. All rights reserved.</p>
     </footer>
 
 </body>

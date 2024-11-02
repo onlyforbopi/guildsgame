@@ -145,17 +145,23 @@ footer p {
 
 .guild-dynamics {
     /*flex: 1 auto; /* Allow it to grow and shrink as needed */
-    max-height: 450px; /* Example height, adjust as needed */
+    max-height: 650px; /* Example height, adjust as needed */
     /*overflow: auto; /* Add scroll if content exceeds max height */
 }
 
 /* Guild dynamics section */
 .guild-dynamics h2, .perks h2 {
     margin: 0; /* Reset margin to ensure no extra space */
+    color: #b0a090; /* Title color matching the theme */
 }
 
 .guild-dynamics ul, .perks ul {
     margin-top: 10px; /* Add top margin to lists for spacing */
+    font-size: 1.2rem;
+}
+
+.guild-dynamics ul li {
+    margin-bottom: 10px
 }
 
 /* Ensure consistent margin for titles */
@@ -194,4 +200,51 @@ footer p {
 .guild-traits p {
     font-size: 1.2rem; /* Font size for paragraph text */
     color: #e0d4c4; /* Light text color for paragraphs */
+}
+
+
+/* Container for Guild Traits and NPC Info */
+.traits-and-npcs {
+    display: flex;
+    gap: 20px; /* Space between the two sections */
+    margin-bottom: 30px; /* Space below the combined sections */
+    align-items: stretch;
+}
+
+.guild-traits, .npc-info {
+    flex: 1; /* Make each section take equal space */
+    background-color: #3c3c3c;
+    border: 1px solid #b0a090;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    flex-direction: column; /* Keeps content aligned vertically */
+}
+
+.npc-info {
+    height: 765px;
+
+}
+
+/* Guild Traits Title */
+.guild-traits h2, .npc-info h2 {
+    font-size: 2rem;
+    color: #b0a090;
+    margin-bottom: 15px;
+}
+
+/* NPC entries styling */
+.npc {
+    margin-bottom: 15px;
+}
+
+.npc h3 {
+    font-size: 1.5rem;
+    color: #b0a090;
+    margin-bottom: 5px;
+}
+
+.npc p {
+    font-size: 1.2rem;
+    color: #e0d4c4;
 }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Servants</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            
+            background-color: #282828;
+            color: #e0d4c4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #b0a090;
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: #3c3c3c;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #e0d4c4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .level-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 20px; /* Spacing between columns */
+        }
+        .level-box {
+            background-color: #3c3c3c;
+            border: 2px solid #b0a090;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px 0;
+            width: 80%; /* Width of the level boxes */
+            text-align: left; /* Align text to the left */
+        }
+        .split-text {
+            background-color: #3c3c3c;
+            border: 2px solid #b0a090;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px 0;
+            width: 80%; /* Width of the level boxes */
+            text-align: left; /* Align text to the left */
+        }
+        .split-level {
+            flex: 1;
+            /* background-color: #3c3c3c; */
+            /* border: 2px solid #b0a090; */
+            border-radius: 5px;
+            padding: 20px;
+            width: 80%; /* Width of the split level box */
+            text-align: left; /* Align text to the left */
+            margin-left: 20px; /* Spacing between columns */
+        }
+        .image-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #3c3c3c;
+            border: 2px solid #b0a090;
+            border-radius: 10px;
+            min-height: 400px;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Character Servants</h1>
+    <!-- Navigation -->
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../stormlight/index.html">Stormlight</a>
+        <a href="../ghostrock/index.html">Ghostrock</a>
+        <a href="../guilds/index.html">Guilds</a>
+    </nav>
+    <div class="container">
+        <div class="level-container">
+            <h2>Servant Levels</h2>
+            <div class="level-box">
+                <h3>Level 1: Basic Servant</h3>
+                <p>Effect: Gain access to a single weak NPC who can perform non-dangerous, non-combat duties such as cleaning, fetching items, or simple errands. This NPC cannot engage in combat or take risks.</p>
+            </div>
+            <div class="level-box">
+                <h3>Level 2: Skilled Assistant</h3>
+                <p>Effect: Access to a more skilled NPC capable of specialized tasks, including managing simple tasks or assisting in minor negotiations.</p>
+            </div>
+            <div class="level-box">
+                <h3>Level 3: Trusted Aide</h3>
+                <p>Effect: The NPC can engage in minor combat and negotiations, providing support during interactions with others.</p>
+            </div>
+            <div class="level-box">
+                <h3>Level 4: Capable Enforcer</h3>
+                <p>Effect: The NPC is capable of engaging in combat and provides significant support during dangerous situations.</p>
+            </div>
+            <div class="level-box">
+                <h3>Level 5: Elite Retainer</h3>
+                <p>Effect: Access to a highly skilled NPC capable of complex duties, including combat and strategic planning for your missions.</p>
+            </div>
+        </div>
+        <div class="split-level">
+            <h2>Split Level System</h2>
+            <div class="split-text">
+            <p>You can split levels between different NPCs to customize their abilities. For example:</p>
+            <ul>
+                <li>Level 2 and Level 3 can mean one NPC manages tasks while another assists in negotiations.</li>
+                <li>Level 4 and Level 1 can mean a bodyguard while having a servant for daily chores.</li>
+            </ul>
+            <p>This allows flexibility in how you manage your servants and their skills!</p>
+        </div>
+        </div>
+    </div>
+    <!-- <div class="image-container">
+        <img id="guildImage" src="" alt="Guild Image">
+    </div>
+    <script>
+        function showImage(imagePath) {
+            const image = document.getElementById('guildImage');
+            image.src = imagePath;
+            image.style.display = 'block'; // Show the image
+        }
+    </script> -->
+</body>
+</html>
